@@ -1,0 +1,10 @@
+Joseph Shaffer
+CSE 5243
+Programming Assignment 1 README
+
+Have each text file, 'imdb_labelled.txt', 'amazon_cells_labelled.txt', and 'yelp_labelled.txt', in the same directory as the preprocessing.py file, so that each text file can be open and read by the python program.
+
+Compile and run the program by: python ./preprocessing.py
+Must be in the directory that contains preprocessing.py
+
+The output is just a sample of the data. It produces the count for each word that is found in sentences 500, 1000, 1500, 2000, 2500, and 3000. The output can be configured to show the count for each word in each sentence of the text files.

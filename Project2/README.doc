@@ -1,0 +1,18 @@
+Joseph Shaffer
+CSE 5243
+Programming Assignment 2 README
+
+Have each text file, 'imdb_labelled.txt', 'amazon_cells_labelled.txt', and 'yelp_labelled.txt', in the same directory as the main.py file, so that each text file can be open and read by the python program.
+
+Compile and run the program by: python ./main.py
+Must be in the directory that contains main.py
+
+The output of the program, is the first for the original feature vector and the KNN classifier. The program outputs the optimal value of K that is found for the KNN classifier from the validation set and the training set. The program then outputs the accuracy of the KNN classifier for the training set, validation set, and the testing set. It also outputs the time to classify a tuple for the testing set.
+
+The program then outputs the results for the Naive Bayes Classifier for the original feature vector. It outputs the accuracy for the classifier for the training set, validation set, and testing set, as well as the time to classify a tuple with the Naive Bayes Classifier for the testing set.
+
+The program then prunes the original feature vector by removing all words that appear in about the same number of sentences with positive sentiments as the number of sentences with negative sentiments, as they will not be good predicters for each classifier. The feature vector is then pruned by removing all words that are not the K-most frequent words, where K is currently set to 1000.
+
+After pruning, the program runs the pruned feature vector for the KNN classifier, where the program again finds the optimal value of K for the classifier with the validation set and training set. The program then uses that value of K to run the KNN classifier for the training set, validation set, and testing set, and outputs the accuracy of the classifier for each of those sets. It also outputs the time to classify a tuple for the testing set in the KNN classifier.
+
+The pruned feature vector is then run through the Naive Bayes Classifier, for the training set, validation set, and testing set and outputs the accuracy of the classifier for each of those sets. Finally, the time to classify a tuple of the testing set is outputted for the Naive Bayes Classifier.

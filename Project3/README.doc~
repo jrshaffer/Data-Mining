@@ -1,0 +1,10 @@
+Joseph Shaffer
+CSE 5243
+Programming Assignment 3 README
+
+Have each text file, 'imdb_labelled.txt', 'amazon_cells_labelled.txt', and 'yelp_labelled.txt', in the same directory as the main.py file, so that each text file can be open and read by the python program.
+
+Compile and run the program by: python ./main.py
+Must be in the directory that contains main.py
+
+

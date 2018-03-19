@@ -1,0 +1,15 @@
+Joseph Shaffer
+CSE 5243
+Programming Assignment 3 README
+
+Have each text file, 'imdb_labelled.txt', 'amazon_cells_labelled.txt', and 'yelp_labelled.txt', in the same directory as the main.py file, so that each text file can be open and read by the python program.
+
+Compile and run the program by: python ./main.py
+Must be in the directory that contains main.py
+
+The first line of the output is the time it takes to find the similarity between every pair of sentences by using the Jaccard Similarity for two sets. This is done by representing each sentence as a set and taking the intersection a pair of sentences, both represented as sets, divided by the union of the same pair of sentences.
+
+The second line of output is the time it takes to find the pairwise Jaccard Similarity for a pair of docs from the document matrix. This is to demonstrate how much longer this method takes to find the similarity between a pair of sentences compared to the k-minhashing method that estimates the similarity between a pair of sentences.
+
+The final part of the output is the time it takes to find the similarity between a pair of sentences by using the k-minhashing method, which estimates the similarity.
+This is done for every value of k, to demonstrate it takes longer for a the similarity to be estimated with greater values of k. However, the mean-squared error is also outputted for every value of k, which shows the difference in the exact similarity measure for every pair of sentences compared to the estimated similarity that is found from the k-minhash method. This is done to show that although estimating the similarity takes longer with greater values of k, the mean-squared error will decrease with greater values of k, meaning that there is a greater accuracy and less error when estimating the similarity with greater values of k.
